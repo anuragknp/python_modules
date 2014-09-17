@@ -11,7 +11,7 @@ import time
 import email
 
 HOST = 'imap-mail.outlook.com'
-USERNAME = 'anuragshuklaknp@live.com'
+USERNAME = 'XXXX@ssss.com'
 ssl = True
 
 def crawl(pid):
@@ -41,7 +41,7 @@ def printmail(mail):
 def fetchmail(pid):
 	server = IMAPClient(HOST, use_uid=True, ssl=ssl)
 #        server.debug = 5;
-	server.login(USERNAME, 'temp1234')
+	server.login(USERNAME, 'xxxx')
 	select_info = server.select_folder('INBOX', readonly=True)
 	print('%d messages in INBOX' % select_info['EXISTS'])
 	messages = server.search(['SUBJECT aaaa'])
